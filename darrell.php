@@ -1,5 +1,25 @@
 <?php
-// Simple PHP Exercises by Darrell Rhodney Pagalan
+echo '<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PHP Exercises</title>
+<style>
+  body {
+    background-color: #808080; /* gray background */
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center; /* center all text */
+    padding: 30px;
+  }
+  b {
+    font-size: 1.2em;
+  }
+</style>
+</head>
+<body>
+';
 
 $br = "<br><br>";
 
@@ -7,7 +27,7 @@ $br = "<br><br>";
 echo "<b>1. Introduce Yourself</b><br>";
 $name = "Darrell Rhodney Pagalan";
 $age = 22;
-$fav_color = "Blue";
+$fav_color = "Gray";
 echo "Hi, I'm $name, I am $age years old, and my favorite color is $fav_color.$br";
 
 // 2. Simple Math
@@ -59,7 +79,7 @@ echo "BMI = " . round($bmi, 2) . $br;
 
 // 8. String Manipulation
 echo "<b>8. String Manipulation</b><br>";
-$sentence = "DARRELL Rhodney Pagalan";
+$sentence = "PHP programming is fun!";
 echo "Sentence: $sentence<br>";
 echo "Number of characters: " . strlen($sentence) . "<br>";
 echo "Number of words: " . str_word_count($sentence) . "<br>";
@@ -115,4 +135,8 @@ $total_cost = $fuel_needed * $price_per_liter;
 echo "Estimated Travel Cost = ₱" . round($total_cost, 2) . $br;
 
 echo "<b>=== Code Execution Successful ===</b>";
+
+echo '
+</body>
+</html>';
 ?>
