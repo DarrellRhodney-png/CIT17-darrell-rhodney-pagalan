@@ -134,8 +134,6 @@ $fuel_needed = $distance / $fuel_efficiency;
 $total_cost = $fuel_needed * $price_per_liter;
 echo "Estimated Travel Cost = ₱" . round($total_cost, 2) . $br;
 
-echo "<b>=== Code Execution Successful ===</b>";
-
 echo '
 </body>
 </html>';
